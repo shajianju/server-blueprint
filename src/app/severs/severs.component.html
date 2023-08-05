@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="mb-3 row">
+        <div class="container">
+            <label for="">Server Name</label>
+        </div>
+        <div class="container">
+            <input type="text" [(ngModel)]="serverName" placeholder="Input server name" class="form-control">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="mb-3 row">
+        <div class="container">
+            <label for="">Server Content</label>
+        </div>
+        <div class="container">
+            <input type="text" placeholder="Input server content" [(ngModel)]="serverContent" class="form-control">
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<button type="submit" class="btn btn-primary mb-3" (click)="addServer()">Add Server</button>
+
+<button type="submit" class="btn btn-primary" (click)="addServerContent()">Add Server Blueprint</button>
